@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>LRUCache</id>
+    <version>0.1.0</version>
+    <title>LRUCache</title>
+    <authors>Tom Jacques</authors>
+    <owners>Tom Jacques</owners>
+    <licenseUrl>https://github.com/tejacques/LRUCache/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/tejacques/LRUCache/projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+        Binaries for the LRUCache library.
+        Visit https://github.com/tejacques/LRUCache for an overview and usage examples.
+    </description>
+    <summary>
+        An open source lightweight thread-safe LRUCache for .NET
+    </summary>
+    <releaseNotes>
+        Notes:
+       
+        Version 0.1.0:
+            - Working version with initial API
+
+    </releaseNotes>
+    <dependencies>
+    </dependencies>
+    <copyright>Copyright 2014</copyright>
+    <tags>Caching LRUCache LRU</tags>
+  </metadata>
+  <files>
+    <file src="..\src\LRUCache\bin\Release\*.*" target="lib\Net20" />
+    <file src="..\src\LRUCache\*.cs" target ="src\CallR" />
+  </files>
+</package>
