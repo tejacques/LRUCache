@@ -7,7 +7,7 @@
     <authors>Tom Jacques</authors>
     <owners>Tom Jacques</owners>
     <licenseUrl>https://github.com/tejacques/LRUCache/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/tejacques/LRUCache/projectUrl>
+    <projectUrl>https://github.com/tejacques/LRUCache</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
         Binaries for the LRUCache library.
