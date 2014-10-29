@@ -24,7 +24,7 @@ I wanted a straightforward, lightweight thread-safe LRU cache, and I couldn't fi
 Example Usage
 -------------
 
-``` .cs
+``` csharp
 var cache = new LRUCache<int, string>(capacity: 1000);
 var key = 1;
 var value = "Hello";
