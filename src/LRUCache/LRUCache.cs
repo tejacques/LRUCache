@@ -124,6 +124,16 @@ namespace Caching
         /// </summary>
         /// <param name="key">The cache key.</param>
         /// <param name="value">The value to set in the cache.</param>
+        public void Add(K key, V value)
+        {
+            TryAdd(key, value);
+        }
+
+        /// <summary>
+        /// Sets the item being stored to the supplied value.
+        /// </summary>
+        /// <param name="key">The cache key.</param>
+        /// <param name="value">The value to set in the cache.</param>
         /// <returns>True if the set was successful. False otherwise.</returns>
         public bool TryAdd(K key, V value)
         {
