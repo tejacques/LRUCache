@@ -218,6 +218,7 @@ namespace Caching
                 this._entries.Clear();
                 this._head = null;
                 this._tail = null;
+                this._count = 0;
                 return true;
             }
         }
