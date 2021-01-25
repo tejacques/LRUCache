@@ -101,9 +101,12 @@ namespace Caching
             CacheNode entry;
             value = default(V);
 
-            if (!this._entries.TryGetValue(key, out entry))
+            lock (this)
             {
-                return false;
+                if (!this._entries.TryGetValue(key, out entry))
+                {
+                    return false;
+                }
             }
 
             if (this._refreshEntries)
@@ -138,7 +141,15 @@ namespace Caching
         public bool TryAdd(K key, V value)
         {
             CacheNode entry;
-            if (!this._entries.TryGetValue(key, out entry))
+
+            var result = false;
+
+            lock (this)
+            {
+                result = this._entries.TryGetValue(key, out entry);
+            }
+
+            if (!result)
             {
                 // Add the entry
                 lock (this)
